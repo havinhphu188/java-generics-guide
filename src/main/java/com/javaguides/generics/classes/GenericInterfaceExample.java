@@ -10,10 +10,10 @@ public class GenericInterfaceExample {
 		Integer intOfArray[] = { 3, 6, 2, 8, 6 };
 		Character charOfArray[] = { 'A', 'r', 'V', 'w' };
 		String strOfArray[] = {"abc", "xyz", "pqr"};
-		
-		MinMaxImpl<Integer> intMinMax = new MinMaxImpl<Integer>(intOfArray);
-		MinMaxImpl<Character> charMinMax = new MinMaxImpl<Character>(charOfArray);
-		MinMaxImpl<String> strMinMax = new MinMaxImpl<String>(strOfArray);
+
+		MinMax<Integer> intMinMax = new MinMaxImpl<Integer>(intOfArray);
+		MinMax<Character> charMinMax = new MinMaxImpl<Character>(charOfArray);
+		MinMax<String> strMinMax = new MinMaxImpl<String>(strOfArray);
 
 		System.out.println("Max value in intOfArray: " + intMinMax.max());
 		System.out.println("Min value in intOfArray: " + intMinMax.min());

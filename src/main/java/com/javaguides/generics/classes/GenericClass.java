@@ -15,16 +15,16 @@ public class GenericClass<T extends A> {
 
 		// Creating object of sub class C and
 		// passing it to Bound as a type parameter.
-		GenericClass<C> bec = new GenericClass<C>(new C());
+		GenericClass<C> bec = new GenericClass<>(new C());
 		bec.doRunTest();
 
 		// Creating object of sub class B and
 		// passing it to Bound as a type parameter.
-		GenericClass<B> beb = new GenericClass<B>(new B());
+		GenericClass<B> beb = new GenericClass<>(new B());
 		beb.doRunTest();
 
 		// similarly passing super class A
-		GenericClass<A> bea = new GenericClass<A>(new A());
+		GenericClass<A> bea = new GenericClass<>(new A());
 		bea.doRunTest();
 		
 	}
